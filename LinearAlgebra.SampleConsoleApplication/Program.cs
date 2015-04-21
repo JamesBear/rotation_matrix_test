@@ -53,5 +53,9 @@ namespace LinearAlgebra.SampleConsoleApplication
 
             Console.ReadKey();
         }
+
+        static void TestExtrinsicIntrinsicConversion()
+        {
+        }
     }
 }

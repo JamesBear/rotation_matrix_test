@@ -14,8 +14,20 @@ namespace LinearAlgebra.Matricies
         {
             if (BASIC_EQUATIONS == null)
             {
-                BASIC_EQUATIONS = new CS2Matrix[3,3,3];
-                BASIC_EQUATIONS[0,2,0] = (c1, s1, c2, s2, c3, s3) => Zip(c2,-c3*s2,s2*s3, c1*s2, c1*c2*c3-s1*s3,-c3*s1-c1*c2*s3, s1*s2,c1*s3+c2*c3*s1,c1*c3-c2*s1*s3);
+                BASIC_EQUATIONS = new CS2Matrix[3, 3, 3];
+                BASIC_EQUATIONS[0, 2, 0] = (c1, s1, c2, s2, c3, s3) => Zip(c2, -c3 * s2, s2 * s3, c1 * s2, c1 * c2 * c3 - s1 * s3, -c3 * s1 - c1 * c2 * s3, s1 * s2, c1 * s3 + c2 * c3 * s1, c1 * c3 - c2 * s1 * s3);
+                BASIC_EQUATIONS[0, 2, 0] = (c1, s1, c2, s2, c3, s3) => Zip(c2, -c3 * s2, s2 * s3, c1 * s2, c1 * c2 * c3 - s1 * s3, -c3 * s1 - c1 * c2 * s3, s1 * s2, c1 * s3 + c2 * c3 * s1, c1 * c3 - c2 * s1 * s3);
+                BASIC_EQUATIONS[0, 1, 0] = (c1, s1, c2, s2, c3, s3) => Zip(c2, s2 * s3, c3 * s2, s1 * s2, c1 * c3 - c2 * s1 * s3, -c1 * s3 - c2 * c3 * s1, -c1 * s2, c3 * s1 + c1 * c2 * s3, c1 * c2 * c3 - s1 * s3);
+                BASIC_EQUATIONS[1, 0, 1] = (c1, s1, c2, s2, c3, s3) => Zip(c1 * c3 - c2 * s1 * s3, s1 * s2, c1 * s3 + c2 * c3 * s1, s2 * s3, c2, -c3 * s2, -c3 * s1 - c1 * c2 * s3, c1 * s2, c1 * c2 * c3 - s1 * s3);
+                BASIC_EQUATIONS[1, 2, 1] = (c1, s1, c2, s2, c3, s3) => Zip(c1 * c2 * c3 - s1 * s3, -c1 * s2, c3 * s1 + c1 * c2 * s3, c3 * s2, c2, s2 * s3, -c1 * s3 - c2 * c3 * s1, s1 * s2, c1 * c3 - c2 * s1 * s3);
+                BASIC_EQUATIONS[2, 1, 2] = (c1, s1, c2, s2, c3, s3) => Zip(c1 * c2 * c3 - s1 * s3, -c3 * s1 - c1 * c2 * s3, c1 * s2, c1 * s3 + c2 * c3 * s1, c1 * c3 - c2 * s1 * s3, s1 * s2, -c3 * s2, s2 * s3, c2);
+                BASIC_EQUATIONS[2, 0, 2] = (c1, s1, c2, s2, c3, s3) => Zip(c1 * c3 - c2 * s1 * s3, -c1 * s3 - c2 * c3 * s1, s1 * s2, c3 * s1 + c1 * c2 * s3, c1 * c2 * c3 - s1 * s3, -c1 * s2, s2 * s3, c3 * s2, c2);
+                BASIC_EQUATIONS[0, 2, 1] = (c1, s1, c2, s2, c3, s3) => Zip(c2 * c3, -s2, c2 * s3, s1 * s3 + c1 * c3 * s2, c1 * c2, c1 * s2 * s3 - c3 * s1, c3 * s1 * s2 - c1 * s3, c2 * s1, c1 * c3 + s1 * s2 * s3);
+                BASIC_EQUATIONS[0, 1, 2] = (c1, s1, c2, s2, c3, s3) => Zip(c2 * c3, -c2 * s3, s2, c1 * s3 + c3 * s1 * s2, c1 * c3 - s1 * s2 * s3, -c2 * s1, s1 * s3 - c1 * c3 * s2, c3 * s1 + c1 * s2 * s3, c1 * c2);
+                BASIC_EQUATIONS[1, 0, 2] = (c1, s1, c2, s2, c3, s3) => Zip(c1 * c3 + s1 * s2 * s3, c3 * s1 * s2 - c1 * s3, c2 * s1, c2 * s3, c2 * c3, -s2, c1 * s2 * s3 - c3 * s1, c1 * c3 * s2 + s1 * s3, c1 * c2);
+                BASIC_EQUATIONS[1, 2, 0] = (c1, s1, c2, s2, c3, s3) => Zip(c1 * c2, s1 * s3 - c1 * c3 * s2, c3 * s1 + c1 * s2 * s3, s2, c2 * c3, -c2 * s3, -c2 * s1, c1 * s3 + c3 * s1 * s2, c1 * c3 - s1 * s2 * s3);
+                BASIC_EQUATIONS[2, 1, 0] = (c1, s1, c2, s2, c3, s3) => Zip(c1 * c2, c1 * s2 * s3 - c3 * s1, s1 * s3 + c1 * c3 * s2, c2 * s1, c1 * c3 + s1 * s2 * s3, c3 * s1 * s2 - c1 * s3, -s2, c2 * s3, c2 * c3);
+                BASIC_EQUATIONS[2, 0, 1] = (c1, s1, c2, s2, c3, s3) => Zip(c1 * c3 - s1 * s2 * s3, -c2 * s1, c1 * s3 + c3 * s1 * s2, c3 * s1 + c1 * s2 * s3, c1 * c2, s1 * s3 - c1 * c3 * s2, -c2 * s3, s2, c2 * c3);
             }
         }
 

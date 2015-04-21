@@ -1,0 +1,60 @@
+xzx
+c2 -c3s2 s2s3
+c1s2 c1c2c3-s1s3 -c3s1-c1c2s3
+s1s2 c1s3+c2c3s1 c1c3-c2s1s3
+
+xyx
+c2 s2s3 c3s2
+s1s2 c1c3-c2s1s3 -c1s3-c2c3s1
+-c1s2 c3s1+c1c2s3 c1c2c3-s1s3
+
+yxy
+c1c3-c2s1s3 s1s2 c1s3+c2c3s1
+s2s3 c2 -c3s2
+-c3s1-c1c2s3 c1s2 c1c2c3-s1s3
+
+yzy
+c1c2c3-s1s3 -c1s2 c3s1+c1c2s3
+c3s2 c2 s2s3
+-c1s3-c2c3s1 s1s2 c1c3-c2s1s3
+
+zyz
+c1c2c3-s1s3 -c3s1-c1c2s3 c1s2
+c1s3+c2c3s1 c1c3-c2s1s3 s1s2
+-c3s2 s2s3 c2
+
+zxz
+c1c3-c2s1s3 -c1s3-c2c3s1 s1s2
+c3s1+c1c2s3 c1c2c3-s1s3 -c1s2
+s2s3 c3s2 c2
+
+xzy
+c2c3 -s2 c2s3
+s1s3+c1c3s2 c1c2 c1s2s3-c3s1
+c3s1s2-c1s3 c2s1 c1c3+s1s2s3
+
+xyz
+c2c3 -c2s3 s2
+c1s3+c3s1s2 c1c3-s1s2s3 -c2s1
+s1s3-c1c3s2 c3s1+c1s2s3 c1c2
+
+yxz
+c1c3+s1s2s3 c3s1s2-c1s3 c2s1
+c2s3 c2c3 -s2
+c1s2s3-c3s1 c1c3s2+s1s3 c1c2
+
+yzx
+c1c2 s1s3-c1c3s2 c3s1+c1s2s3
+s2 c2c3 -c2s3
+-c2s1 c1s3+c3s1s2 c1c3-s1s2s3
+
+zyx
+c1c2 c1s2s3-c3s1 s1s3+c1c3s2
+c2s1 c1c3+s1s2s3 c3s1s2-c1s3
+-s2 c2s3 c2c3
+
+zxy
+c1c3-s1s2s3 -c2s1 c1s3+c3s1s2
+c3s1+c1s2s3 c1c2 s1s3-c1c3s2
+-c2s3 s2 c2c3
+

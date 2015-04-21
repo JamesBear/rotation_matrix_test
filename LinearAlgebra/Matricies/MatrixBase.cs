@@ -490,7 +490,7 @@ namespace LinearAlgebra.Matricies
             String result = String.Empty;
             if (this.IsEmpty) return "[empty]";
 
-            result += String.Format("{0} columns x {1} rows\n", this.ColumnCount, this.RowCount);
+            //result += String.Format("{0} columns x {1} rows\n", this.ColumnCount, this.RowCount);
 
             for (Int32 j = 0; j < this.RowCount; j++)
             {
